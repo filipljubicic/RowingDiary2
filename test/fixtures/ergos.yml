@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  split: 1
+  time: 1
+  rate: 1
+  distance: 1
+  hr: 1
+  notes: MyString
+
+two:
+  description: MyString
+  split: 1
+  time: 1
+  rate: 1
+  distance: 1
+  hr: 1
+  notes: MyString
