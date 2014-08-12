@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140811062825) do
+ActiveRecord::Schema.define(version: 20140811075836) do
+
+  create_table "ergo_sessions", force: true do |t|
+    t.string   "description"
+    t.integer  "split"
+    t.time     "time"
+    t.integer  "rate"
+    t.integer  "distance"
+    t.integer  "hr"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "ergos", force: true do |t|
     t.string   "description"

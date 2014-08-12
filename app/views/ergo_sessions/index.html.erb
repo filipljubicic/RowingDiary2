@@ -1,0 +1,37 @@
+<h1>Listing ergo_sessions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Split</th>
+      <th>Time</th>
+      <th>Rate</th>
+      <th>Distance</th>
+      <th>Hr</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ergo_sessions.each do |ergo_session| %>
+      <tr>
+        <td><%= ergo_session.description %></td>
+        <td><%= ergo_session.split %></td>
+        <td><%= ergo_session.time %></td>
+        <td><%= ergo_session.rate %></td>
+        <td><%= ergo_session.distance %></td>
+        <td><%= ergo_session.hr %></td>
+        <td><%= ergo_session.notes %></td>
+        <td><%= link_to 'Show', ergo_session %></td>
+        <td><%= link_to 'Edit', edit_ergo_session_path(ergo_session) %></td>
+        <td><%= link_to 'Destroy', ergo_session, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ergo session', new_ergo_session_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ergo_session.description %>
+</p>
+
+<p>
+  <strong>Split:</strong>
+  <%= @ergo_session.split %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @ergo_session.time %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @ergo_session.rate %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @ergo_session.distance %>
+</p>
+
+<p>
+  <strong>Hr:</strong>
+  <%= @ergo_session.hr %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @ergo_session.notes %>
+</p>
+
+<%= link_to 'Edit', edit_ergo_session_path(@ergo_session) %> |
+<%= link_to 'Back', ergo_sessions_path %>

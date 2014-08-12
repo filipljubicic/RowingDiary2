@@ -1,0 +1,2 @@
+module ErgoSessionsHelper
+end

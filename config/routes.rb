@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :ergos
+  resources :ergo_sessions
 
   devise_for :users
   root 'pages#home'

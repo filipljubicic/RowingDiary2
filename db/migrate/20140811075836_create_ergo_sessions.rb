@@ -1,13 +1,13 @@
-class CreateErgos < ActiveRecord::Migration
+class CreateErgoSessions < ActiveRecord::Migration
   def change
-    create_table :ergos do |t|
+    create_table :ergo_sessions do |t|
       t.string :description
       t.integer :split
-      t.integer :time
+      t.time :time
       t.integer :rate
       t.integer :distance
       t.integer :hr
-      t.string :notes
+      t.text :notes
 
       t.timestamps
     end

@@ -3,17 +3,17 @@
 one:
   description: MyString
   split: 1
-  time: 1
+  time: 2014-08-11 08:58:36
   rate: 1
   distance: 1
   hr: 1
-  notes: MyString
+  notes: MyText
 
 two:
   description: MyString
   split: 1
-  time: 1
+  time: 2014-08-11 08:58:36
   rate: 1
   distance: 1
   hr: 1
-  notes: MyString
+  notes: MyText

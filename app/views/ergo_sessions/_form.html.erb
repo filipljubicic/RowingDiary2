@@ -1,10 +1,10 @@
-<%= form_for(@ergo) do |f| %>
-  <% if @ergo.errors.any? %>
+<%= form_for(@ergo_session) do |f| %>
+  <% if @ergo_session.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@ergo.errors.count, "error") %> prohibited this ergo from being saved:</h2>
+      <h2><%= pluralize(@ergo_session.errors.count, "error") %> prohibited this ergo_session from being saved:</h2>
 
       <ul>
-      <% @ergo.errors.full_messages.each do |message| %>
+      <% @ergo_session.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :time %><br>
-    <%= f.number_field :time %>
+    <%= f.time_select :time %>
   </div>
   <div class="field">
     <%= f.label :rate %><br>
@@ -37,7 +37,7 @@
   </div>
   <div class="field">
     <%= f.label :notes %><br>
-    <%= f.text_field :notes %>
+    <%= f.text_area :notes %>
   </div>
   <div class="actions">
     <%= f.submit %>
